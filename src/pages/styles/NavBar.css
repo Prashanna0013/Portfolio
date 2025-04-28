@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content:space-between; 
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px; /* Add spacing between links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /* No underline by default */
+    font-weight: bold;
+    font-size: 18px;
+    position: relative; /* Important for pseudo-element positioning */
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -5px; /* Slightly below the text */
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}

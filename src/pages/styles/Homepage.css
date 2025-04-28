@@ -1,0 +1,129 @@
+body {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding-top: 110px; /* to push below fixed navbar */
+}
+
+/* OR if you are using a class */
+.homepage-body {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.homepage-body h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.homepage-body p{
+    font-size: 1.2rem; /* slightly larger but slender */
+    font-weight: 300; /* thinner text */
+    line-height: 1.6; /* more breathing space */
+    margin: 0 auto; /* center align */
+    text-align: justify; /* neat alignment */
+    color: #e0e0e0; /* soft white instead of harsh white */
+}
+
+.quote {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    color: #b0b0b0; /* softer grayish color */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    border-left: 4px solid #ffffff80; /* subtle white left border */
+}
+
+.resume-embed {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-embed iframe {
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+}
+
+#route {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 24px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+#route:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+}
+.skills-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .skills-container h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .skills-category {
+    margin-bottom: 30px;
+  }
+  
+  .skills-category h3 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .skills-category ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .skills-category li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .skills-category li::before {
+    content: '✔️';
+    margin-right: 10px;
+    color: #4CAF50;
+  }
+  
+  /* Flexbox Layout for responsive view */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .skills-category {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .skills-category {
+      flex-basis: 100%;
+    }
+  }
+  
