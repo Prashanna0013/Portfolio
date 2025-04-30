@@ -1,145 +1,215 @@
+/* General Body Style */
 body {
-    background-color: black;
-    color: white;
-    width: 100%;
-    padding-top: 110px; /* to push below fixed navbar */
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding-top: 110px; /* To push content below fixed navbar */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
-/* OR if you are using a class */
+/* Homepage Body */
 .homepage-body {
-    background-color: black;
-    color: white;
-    width: 100%;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 20px;
 }
 
 .homepage-body h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+  font-size: clamp(32px, 8vw, 72px);
+  margin-bottom: 20px;
 }
 
-.homepage-body p{
-    font-size: 1.2rem; /* slightly larger but slender */
-    font-weight: 300; /* thinner text */
-    line-height: 1.6; /* more breathing space */
-    margin: 0 auto; /* center align */
-    text-align: justify; /* neat alignment */
-    color: #e0e0e0; /* soft white instead of harsh white */
+.homepage-body p {
+  font-size: clamp(16px, 4vw, 28px);
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0 auto;
+  text-align: justify;
+  color: #e0e0e0;
 }
 
+/* Quote Section */
 .quote {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 300;
-    text-align: center;
-    color: #b0b0b0; /* softer grayish color */
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 20px;
-    border-left: 4px solid #ffffff80; /* subtle white left border */
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: clamp(16px, 4vw, 24px);
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  color: #b0b0b0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  border-left: 4px solid #ffffff80;
 }
 
+/* Resume Embed Section */
 .resume-embed {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .resume-embed iframe {
-    border: 2px solid white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
 }
 
+/* Route Button */
 #route {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 12px 24px;
-    color: white;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 30px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 24px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: clamp(16px, 1.2vw, 20px);
+  transition: all 0.3s ease;
 }
 
 #route:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.05);
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
 }
-.skills-container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .skills-container h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .skills-category {
-    margin-bottom: 30px;
-  }
-  
-  .skills-category h3 {
-    font-size: 28px;
-    color: #333;
-  }
-  
-  .skills-category ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .skills-category li {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .skills-category li::before {
-    content: '✔️';
-    margin-right: 10px;
-    color: #4CAF50;
-  }
-  
-  /* Flexbox Layout for responsive view */
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .skills-category {
-    flex-basis: 45%;
-    margin-bottom: 20px;
-  }
-  
-  @media (max-width: 768px) {
-    .skills-category {
-      flex-basis: 100%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .homepage-body h1 {
-        font-size: 2rem;
-    }
 
-    .homepage-body p,
-    .quote {
-        font-size: 1rem;
-    }
-    
-    #route {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
- 
+
+.skills-container h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Skills Category */
+.skills-category {
+  flex-basis: 45%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.skills-category h3 {
+  font-size: 28px;
+  color: #e0e0e0;
+}
+
+.skills-category ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-category li {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #e0e0e0;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.skills-category li::before {
+  content: '✔️';
+  margin-right: 10px;
+  color: #4CAF50;
+}
+
+/* Responsive Layout for Skills */
+@media (max-width: 768px) {
+  .skills-category {
+    flex-basis: 100%;
+    padding: 10px;
+  }
+
+  .homepage-body h1 {
+    font-size: 6vw;
+  }
+
+  .homepage-body p,
+  .quote {
+    font-size: 3.5vw;
+  }
+
+  #route {
+    font-size: 4vw;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-category {
+    flex-basis: 100%;
+  }
+
+  .homepage-body h1 {
+    font-size: 7vw;
+  }
+
+  .homepage-body p,
+  .quote {
+    font-size: 4.5vw;
+  }
+
+  #route {
+    font-size: 5vw;
+    padding: 8px 16px;
+  }
+}
+
+/* Larger Screens */
+@media (min-width: 1200px) {
+  .homepage-body h1 {
+    font-size: 64px;
+  }
+
+  .homepage-body p,
+  .quote {
+    font-size: 22px;
+  }
+
+  #route {
+    font-size: 18px;
+  }
+}
+
+/* Accessibility & Performance */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 800px;
+}
+
+/* Contact Section */
+.contact-info {
+  margin-top: 40px;
+}
+
+.contact-info p,
+.contact-info a {
+  font-size: 28px;
+  color: #555;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.contact-info a {
+  color: whitesmoke;
+}

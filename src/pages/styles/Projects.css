@@ -1,166 +1,252 @@
+/* Projects container styles */
 .projects-container {
-    padding: 40px;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .projects-container h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Projects section heading */
+.projects-container h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Grid for projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Project card styles */
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Project image (thumbnail) */
+.project-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Project card title */
+.project-card h3 {
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+/* Project description */
+.project-card p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Tech stack tags */
+.tech-stack {
+  margin-top: 15px;
+}
+
+/* Individual tech tag styling */
+.tech-tag {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Project title */
+.project-title {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Project description text */
+.project-description {
+  font-size: 16px;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Project links (e.g., GitHub, Demo) */
+.project-links a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007BFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+
+/* For mobile/tablet screens */
+@media (max-width: 768px) {
   .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 20px;
-  }
-  
-  .project-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .project-thumbnail {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .project-card h3 {
-    font-size: 24px;
-    margin-top: 15px;
-  }
-  
-  .project-card p {
-    font-size: 16px;
-    color: #555;
-    margin-top: 10px;
-  }
-  
-  .tech-stack {
-    margin-top: 15px;
-  }
-  
-  .tech-tag {
-    display: inline-block;
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 20px;
-    font-size: 14px;
-  }
-  
-  .project-title {
-    font-size: 24px;
-    margin-top: 10px;
-    color: #333;
-  }
-  
-  .project-description {
-    font-size: 16px;
-    color: #666;
-    margin: 10px 0;
-  }
-  
-  .project-links a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #007BFF;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .project-links a:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
+      grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
   }
 
-  .certificates-container {
-    padding: 40px;
-    max-width: 1200px;
-    margin: auto;
+  .projects-container h2 {
+      font-size: 28px; /* Adjust heading size for smaller screens */
   }
-  
-  .certificates-container h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
+
+  .project-card h3 {
+      font-size: 20px; /* Adjust project title size */
   }
-  
+
+  .project-card p {
+      font-size: 14px; /* Adjust project description size */
+  }
+
+  .tech-tag {
+      font-size: 12px; /* Reduce size of tech tags */
+  }
+
+  .tech-stack {
+      text-align: center; /* Center tech stack for smaller screens */
+  }
+}
+
+/* Certificates container styles */
+.certificates-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Certificates section heading */
+.certificates-container h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* Grid for certificates */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Certificate card styles */
+.certificate-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Certificate image */
+.certificate-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Certificate title */
+.certificate-title {
+  font-size: 22px;
+  margin-top: 15px;
+  color: #333;
+}
+
+/* Certificate organization */
+.certificate-organization {
+  font-weight: bold;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Certificate description */
+.certificate-description {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Media queries for certificates responsiveness */
+@media (max-width: 768px) {
   .certificates-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 20px;
+      grid-template-columns: 1fr; /* Stack certificates vertically */
   }
-  
+
+  .certificates-container h2 {
+      font-size: 28px; /* Adjust heading size for smaller screens */
+  }
+
   .certificate-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
+      padding: 15px; /* Adjust padding for certificate cards */
   }
-  
-  .certificate-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .certificate-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
+
   .certificate-title {
-    font-size: 22px;
-    margin-top: 15px;
-    color: #333;
+      font-size: 20px; /* Adjust title size */
   }
-  
-  .certificate-organization {
-    font-weight: bold;
-    color: #555;
-    margin-top: 5px;
-  }
-  
+
   .certificate-description {
-    font-size: 16px;
-    color: #666;
-    margin-top: 10px;
+      font-size: 14px; /* Adjust description size */
   }
-  
-  @media (max-width: 768px) {
-    .certificates-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  
-  .contact-info {
-    margin-top: 40px;
-  }
-  
+}
+
+/* Contact information */
+.contact-info {
+  margin-top: 40px;
+}
+
+.contact-info p,
+.contact-info a {
+  font-size: 28px;
+  color: #555;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.contact-info a {
+  color: whitesmoke;
+  position: relative; /* ✅ Needed for the underline effect */
+}
+
+.contact-info a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.contact-info a:hover::after {
+  width: 100%;
+}
+
+
+/* Adjusting contact info for smaller screens */
+@media (max-width: 768px) {
   .contact-info p, .contact-info a {
-    font-size: 28px;
-    color: #555;
-    margin-top: 8px;
-    text-decoration: none;
+      font-size: 22px; /* Reduce font size for smaller screens */
   }
-  .contact-info a{
-    color: whitesmoke;
-  }
+}
