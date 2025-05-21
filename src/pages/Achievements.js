@@ -4,15 +4,15 @@ import './styles/Projects.css'; // Better to name it Certificates.css
 function Achievements() {
   const certificates = [
     {
-      title: "Smart India Hackathon Winner",
+      title: "Smart India Hackathon",
       organization: "Government of India",
-      description: "Won the Smart India Hackathon for developing an innovative solution using technology.",
+      description: "Participated in the Smart India Hackathon for developing an innovative solution using technology.",
       image: "https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1"
     },
     {
-      title: "Amazon Hackathon Winner",
+      title: "Amazon Hackathon",
       organization: "Amazon",
-      description: "Winner in Amazon Hackathon for solving real-world problems through cloud solutions.",
+      description: "Participated in Amazon Hackathon for solving real-world problems through cloud solutions.",
       image: "https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg"
     },
     {
