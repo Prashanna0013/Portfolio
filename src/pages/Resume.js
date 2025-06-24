@@ -6,7 +6,7 @@ function Resume() {
         <>
         <NavBar/>
         <div className="resume-embed">
-            <iframe src="https://drive.google.com/file/d/1NsWHLkLnHgSpkhSG5xocqfQ1khtbpcne/preview" width='100%' height='600px' title="Resume"/>
+            <iframe src="https://drive.google.com/file/d/1NsWHLkLnHgSpkhSG5xocqfQ1khtbpcne/view" width='100%' height='600px' title="Resume"/>
         </div>
         </>
     );
