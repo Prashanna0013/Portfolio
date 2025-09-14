@@ -4,16 +4,10 @@ import './styles/Projects.css';
 function Achievements() {
   const certificates = [
     {
-      title: "Smart India Hackathon",
-      organization: "Government of India",
-      description: "Participated in the Smart India Hackathon for developing an innovative solution for real time detecting of Indian Sign Language.",
-      image: "https://i0.wp.com/opportunitycell.com/wp-content/uploads/2022/03/SIH2.png?fit=327%2C345&ssl=1"
-    },
-    {
-      title: "Amazon Hackathon",
-      organization: "Amazon",
-      description: "Participated in Amazon Hackathon for developing a solution for Smart Irrigation System.",
-      image: "https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg"
+      title: "Internally Funded Student Project",
+      organization: "SSN College of Engineering",
+      description: "Selected among the Top 15 teams in college to receive funding support for innovative project development.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIFtsWAmmao_wKpi71ahEFgY4MVvVWuaO0sA&s"
     },
     {
       title: "Intel GenAI Hackathon",

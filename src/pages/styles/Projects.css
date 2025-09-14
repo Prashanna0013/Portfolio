@@ -139,7 +139,7 @@
 /* Grid for certificates */
 .certificates-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Always 2 equal columns */
   gap: 30px;
   padding: 20px;
 }
